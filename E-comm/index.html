@@ -8,17 +8,58 @@
     <title>E-comm</title>
 </head>
 <body>
-    <main>
+    <div class="wrapper">
+      <main class="main_wrap">
         <div class="main_container container">
-            <div class="best_sellers">
-                
-            </div>
-            <div class="Why_us">
-
-            </div>
+            <section class="best_sellers">
+                <h2 class="sellers_title"></h2>
+                <ul class="sellers_list">
+                    <li class="sellers__list--Border"><a href="#" class="sellers__link sellers__link--Blue">All</a></li>
+                    <li><a href="#" class="sellers__link">Bags</a></li>
+                    <li><a href="#" class="sellers__link">Sneakers</a></li>
+                    <li><a href="#" class="sellers__link">Belt</a></li>
+                    <li><a href="#" class="sellers__link">Sunglasses</a></li>
+                </ul>
+                <div class="card_container">
+                    <div class="card">
+                        <img src="./" alt="" class="card__image">
+                        <div class="card__group">
+                           <a href="#">
+                               <h3 class="card__title">Nike Air Max 270 React</h3>
+                           </a>
+                           <img src="" alt="">
+                           <p class="card__text">
+                              <span class="card__blue__text">$299,43</span>
+                              <span class="card__grey__text">$534,33</span>
+                              <span class="card__red__text">24% Off</span>
+                           </p>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="sellers__btm__undertitle"><a href="#" class="sellers__btm__link"></a></h3>
+            </section>
+            <section class="Why_us d-flex-c">
+                <div>
+                    <img src="" alt="" class="us__image">
+                    <h3 class="us__title"></h3>
+                </div>
+                <div>
+                    <img src="" alt="" class="us__image">
+                    <h3 class="us__title"></h3>
+                </div>
+                <div>
+                    <img src="" alt="" class="us__image">
+                    <h3 class="us__title"></h3>
+                </div>
+            </section>
             <form action="" class="search">
+                <p class="search__content">
+                    <input type="search" placeholder="Search query..." class="search__input"> 
+                    <input type="submit" value="Найти" class="search__btn">
+                </p>
             </form>
         </div>
-    </main>
+      </main>
+    </div>
 </body>
 </html>
