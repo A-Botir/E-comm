@@ -1,212 +1,420 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <title>E-comm</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="wrapper">
+      <!-- Header Section -->
+      <div class="container">
+        <header>
+          <div class="menu">
+            <div class="menu__left">
+              <a class="eng__usd" href="#">ENG</a>
+              <a class="eng__usd" href="#">USD</a>
+            </div>
+            <div class="menu__right">
+              <div>
+                <img
+                  class="contact"
+                  src="./assets/icons/contact.svg"
+                  alt="contact"
+                />
+                <a class="user__info" href="#">My profile</a>
+              </div>
+              <div><a class="user__info" href="#">Items</a></div>
+              <div>
+                <a class="search" href="#">$0.00</a>
+                <img src="./assets/icons/search-icon.svg" alt="search-icon" />
+              </div>
+            </div>
+          </div>
+          <div class="header__heading">
+            <div class="header__left">
+              <div>
+                <img src="./assets/icons/Logotype.svg" alt="logotype" />
+              </div>
+              <div class="E_comm"><a href="#">E-Comm</a></div>
+            </div>
+            <div class="header__right">
+              <div><a class="home" href="#">HOME</a></div>
+              <div><a class="bags" href="#">BAGS</a></div>
+              <div><a class="bags" href="#">SNEAKERS</a></div>
+              <div><a class="bags" href="#">BELT</a></div>
+              <div><a class="bags" href="#">CONTACT</a></div>
+            </div>
+          </div>
+          <div>
+            <img
+              class="image"
+              src="./assets/foto/background-image.png"
+              alt="bacground-photo"
+            />
+            <h1>Super Flash Sale 50% Off</h1>
+          </div>
+        </header>
+      </div>
+
+      <!-- Main section -->
       <main class="main_wrap">
         <div class="main_container container">
-            <section class="best_sellers">
-                <h2 class="sellers_title">BEST SELLER</h2>
-                <ul class="sellers_list d-flex-c">
-                    <li class="sellers__list--Border"><a href="#" class="sellers__link sellers__link--Blue">All</a></li>
-                    <li><a href="#" class="sellers__link">Bags</a></li>
-                    <li><a href="#" class="sellers__link">Sneakers</a></li>
-                    <li><a href="#" class="sellers__link">Belt</a></li>
-                    <li><a href="#" class="sellers__link">Sunglasses</a></li>
-                </ul>
-                <div class="card_container d-flex-c">
-                    <div class="card">
-                        <div class="card__box">
-                            <input type="checkbox" id="clickCheckbox" class="click-checkbox">
-                            <label for="clickCheckbox" class="click">
-                                <img src="./assets/icons/actions.svg" alt="actions" class="click__img">
-                            </label>
-                            <img src="./assets/foto/product1.svg" alt="product" class="card__image">
-                            <img src="./assets/icons/hot.svg" alt="hot icon" class="hot_img">
-                        </div>                        
-                        <div class="card__group d-flex-c">
-                           <a href="#">
-                               <h3 class="card__title">Nike Air Max 270 React</h3>
-                           </a>
-                           <img src="./assets/icons/rate-product.svg" alt="" class="stars">
-                           <p class="card__text d-flex-c">
-                              <span class="card__blue__text">$299,43</span>
-                              <span class="card__grey__text">$534,33</span>
-                              <span class="card__red__text">24% Off</span>
-                           </p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card__box">
-                            <input type="checkbox" id="clickCheckbox2" class="click-checkbox">
-                            <label for="clickCheckbox2" class="click">
-                                <img src="./assets/icons/actions.svg" alt="actions" class="click__img">
-                            </label>
-                            <img src="./assets/foto/product2.svg" alt="product" class="card__image">
-                        </div>                        
-                        <div class="card__group d-flex-c">
-                           <a href="#">
-                               <h3 class="card__title">Nike Air Max 270 React</h3>
-                           </a>
-                           <img src="./assets/icons/rate-product.svg" alt="" class="stars">
-                           <p class="card__text d-flex-c">
-                              <span class="card__blue__text">$299,43</span>
-                              <span class="card__grey__text">$534,33</span>
-                              <span class="card__red__text">24% Off</span>
-                           </p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card__box">
-                            <input type="checkbox" id="clickCheckbox3" class="click-checkbox">
-                            <label for="clickCheckbox3" class="click">
-                                <img src="./assets/icons/actions.svg" alt="actions" class="click__img">
-                            </label>
-                            <img src="./assets/foto/product1.svg" alt="product" class="card__image">
-                        </div>                        
-                        <div class="card__group d-flex-c">
-                           <a href="#">
-                               <h3 class="card__title">Nike Air Max 270 React</h3>
-                           </a>
-                           <img src="./assets/icons/rate-product.svg" alt="" class="stars">
-                           <p class="card__text d-flex-c">
-                              <span class="card__blue__text">$299,43</span>
-                              <span class="card__grey__text">$534,33</span>
-                              <span class="card__red__text">24% Off</span>
-                           </p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card__box">
-                            <input type="checkbox" id="clickCheckbox4" class="click-checkbox">
-                            <label for="clickCheckbox4" class="click">
-                                <img src="./assets/icons/actions.svg" alt="actions" class="click__img">
-                            </label>
-                            <img src="./assets/foto/product4.svg" alt="product" class="card__image">
-                        </div>                        
-                        <div class="card__group d-flex-c">
-                           <a href="#">
-                               <h3 class="card__title">Nike Air Max 270 React</h3>
-                           </a>
-                           <img src="./assets/icons/rate-product.svg" alt="" class="stars">
-                           <p class="card__text d-flex-c">
-                              <span class="card__blue__text">$299,43</span>
-                              <span class="card__grey__text card__grey__text--opacity">$534,33</span>
-                              <span class="card__red__text">24% Off</span>
-                           </p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card__box">
-                            <input type="checkbox" id="clickCheckbox5" class="click-checkbox">
-                            <label for="clickCheckbox5" class="click">
-                                <img src="./assets/icons/actions.svg" alt="actions" class="click__img">
-                            </label>
-                            <img src="./assets/foto/product5.svg" alt="product" class="card__image">
-                        </div>                        
-                        <div class="card__group d-flex-c">
-                           <a href="#">
-                               <h3 class="card__title">Nike Air Max 270 React</h3>
-                           </a>
-                           <img src="./assets/icons/rate-product.svg" alt="" class="stars">
-                           <p class="card__text d-flex-c">
-                              <span class="card__blue__text">$299,43</span>
-                              <span class="card__grey__text">$534,33</span>
-                              <span class="card__red__text">24% Off</span>
-                           </p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card__box">
-                            <input type="checkbox" id="clickCheckbox6" class="click-checkbox">
-                            <label for="clickCheckbox6" class="click">
-                                <img src="./assets/icons/actions.svg" alt="actions" class="click__img">
-                            </label>
-                            <img src="./assets/foto/product6.svg" alt="product" class="card__image">
-                        </div>                        
-                        <div class="card__group d-flex-c">
-                           <a href="#">
-                               <h3 class="card__title">Nike Air Max 270 React</h3>
-                           </a>
-                           <img src="./assets/icons/rate-product.svg" alt="" class="stars">
-                           <p class="card__text d-flex-c">
-                              <span class="card__blue__text">$299,43</span>
-                              <span class="card__grey__text">$534,33</span>
-                              <span class="card__red__text">24% Off</span>
-                           </p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card__box">
-                            <input type="checkbox" id="clickCheckbox7" class="click-checkbox">
-                            <label for="clickCheckbox7" class="click">
-                                <img src="./assets/icons/actions.svg" alt="actions" class="click__img">
-                            </label>
-                            <img src="./assets/foto/product7.svg" alt="product" class="card__image">
-                        </div>                        
-                        <div class="card__group d-flex-c">
-                           <a href="#">
-                               <h3 class="card__title">Nike Air Max 270 React</h3>
-                           </a>
-                           <img src="./assets/icons/rate-product.svg" alt="" class="stars">
-                           <p class="card__text d-flex-c">
-                              <span class="card__blue__text">$299,43</span>
-                              <span class="card__grey__text">$534,33</span>
-                              <span class="card__red__text">24% Off</span>
-                           </p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card__box">
-                            <input type="checkbox" id="clickCheckbox8" class="click-checkbox">
-                            <label for="clickCheckbox8" class="click">
-                                <img src="./assets/icons/actions.svg" alt="actions" class="click__img">
-                            </label>
-                            <img src="./assets/foto/product8.svg" alt="product" class="card__image">
-                        </div>                        
-                        <div class="card__group d-flex-c">
-                           <a href="#">
-                               <h3 class="card__title">Nike Air Max 270 React</h3>
-                           </a>
-                           <img src="./assets/icons/rate-product.svg" alt="" class="stars">
-                           <p class="card__text d-flex-c">
-                              <span class="card__blue__text">$299,43</span>
-                              <span class="card__grey__text">$534,33</span>
-                              <span class="card__red__text">24% Off</span>
-                           </p>
-                        </div>
-                    </div>
+          <section class="best_sellers">
+            <h2 class="sellers_title">BEST SELLER</h2>
+            <ul class="sellers_list d-flex-c">
+              <li class="sellers__list--Border">
+                <a href="#" class="sellers__link sellers__link--Blue">All</a>
+              </li>
+              <li><a href="#" class="sellers__link">Bags</a></li>
+              <li><a href="#" class="sellers__link">Sneakers</a></li>
+              <li><a href="#" class="sellers__link">Belt</a></li>
+              <li><a href="#" class="sellers__link">Sunglasses</a></li>
+            </ul>
+            <div class="card_container d-flex-c">
+              <div class="card">
+                <div class="card__box">
+                  <input
+                    type="checkbox"
+                    id="clickCheckbox"
+                    class="click-checkbox"
+                  />
+                  <label for="clickCheckbox" class="click">
+                    <img
+                      src="./assets/icons/actions.svg"
+                      alt="actions"
+                      class="click__img"
+                    />
+                  </label>
+                  <img
+                    src="./assets/foto/product1.svg"
+                    alt="product"
+                    class="card__image"
+                  />
+                  <img
+                    src="./assets/icons/hot.svg"
+                    alt="hot icon"
+                    class="hot_img"
+                  />
                 </div>
-                <h3 class="sellers__btm__undertitle"><a href="#" class="sellers__btm__link">Load More</a></h3>
-            </section>
-            <section class="why_us d-flex-c">
-                <div class="us_content">
-                    <img src="./assets/icons/gruzovik.svg" alt="car icon" class="us__image">
-                    <h3 class="us__title">FREE SHIPPING</h3>
+                <div class="card__group d-flex-c">
+                  <a href="#">
+                    <h3 class="card__title">Nike Air Max 270 React</h3>
+                  </a>
+                  <img
+                    src="./assets/icons/rate-product.svg"
+                    alt=""
+                    class="stars"
+                  />
+                  <p class="card__text d-flex-c">
+                    <span class="card__blue__text">$299,43</span>
+                    <span class="card__grey__text">$534,33</span>
+                    <span class="card__red__text">24% Off</span>
+                  </p>
                 </div>
-                <div class="us_content">
-                    <img src="./assets/icons/refund.svg" alt="refund icon" class="us__image">
-                    <h3 class="us__title">100% REFUND</h3>
+              </div>
+              <div class="card">
+                <div class="card__box">
+                  <input
+                    type="checkbox"
+                    id="clickCheckbox2"
+                    class="click-checkbox"
+                  />
+                  <label for="clickCheckbox2" class="click">
+                    <img
+                      src="./assets/icons/actions.svg"
+                      alt="actions"
+                      class="click__img"
+                    />
+                  </label>
+                  <img
+                    src="./assets/foto/product2.svg"
+                    alt="product"
+                    class="card__image"
+                  />
                 </div>
-                <div class="us_content">
-                    <img src="./assets/icons/call-center.svg" alt="call-center icon" class="us__image">
-                    <h3 class="us__title">SUPPORT 24/7</h3>
+                <div class="card__group d-flex-c">
+                  <a href="#">
+                    <h3 class="card__title">Nike Air Max 270 React</h3>
+                  </a>
+                  <img
+                    src="./assets/icons/rate-product.svg"
+                    alt=""
+                    class="stars"
+                  />
+                  <p class="card__text d-flex-c">
+                    <span class="card__blue__text">$299,43</span>
+                    <span class="card__grey__text">$534,33</span>
+                    <span class="card__red__text">24% Off</span>
+                  </p>
                 </div>
-            </section>
-            <form action="https://htmlacademy.ru/" class="search" target="_blank">
-                <p class="search__content">
-                    <input type="search" placeholder="Search query..." class="search__input"> 
-                    <input type="submit" value="Search" class="search__btn">
-                </p>
-            </form>
+              </div>
+              <div class="card">
+                <div class="card__box">
+                  <input
+                    type="checkbox"
+                    id="clickCheckbox3"
+                    class="click-checkbox"
+                  />
+                  <label for="clickCheckbox3" class="click">
+                    <img
+                      src="./assets/icons/actions.svg"
+                      alt="actions"
+                      class="click__img"
+                    />
+                  </label>
+                  <img
+                    src="./assets/foto/product1.svg"
+                    alt="product"
+                    class="card__image"
+                  />
+                </div>
+                <div class="card__group d-flex-c">
+                  <a href="#">
+                    <h3 class="card__title">Nike Air Max 270 React</h3>
+                  </a>
+                  <img
+                    src="./assets/icons/rate-product.svg"
+                    alt=""
+                    class="stars"
+                  />
+                  <p class="card__text d-flex-c">
+                    <span class="card__blue__text">$299,43</span>
+                    <span class="card__grey__text">$534,33</span>
+                    <span class="card__red__text">24% Off</span>
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card__box">
+                  <input
+                    type="checkbox"
+                    id="clickCheckbox4"
+                    class="click-checkbox"
+                  />
+                  <label for="clickCheckbox4" class="click">
+                    <img
+                      src="./assets/icons/actions.svg"
+                      alt="actions"
+                      class="click__img"
+                    />
+                  </label>
+                  <img
+                    src="./assets/foto/product4.svg"
+                    alt="product"
+                    class="card__image"
+                  />
+                </div>
+                <div class="card__group d-flex-c">
+                  <a href="#">
+                    <h3 class="card__title">Nike Air Max 270 React</h3>
+                  </a>
+                  <img
+                    src="./assets/icons/rate-product.svg"
+                    alt=""
+                    class="stars"
+                  />
+                  <p class="card__text d-flex-c">
+                    <span class="card__blue__text">$299,43</span>
+                    <span class="card__grey__text card__grey__text--opacity"
+                      >$534,33</span
+                    >
+                    <span class="card__red__text">24% Off</span>
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card__box">
+                  <input
+                    type="checkbox"
+                    id="clickCheckbox5"
+                    class="click-checkbox"
+                  />
+                  <label for="clickCheckbox5" class="click">
+                    <img
+                      src="./assets/icons/actions.svg"
+                      alt="actions"
+                      class="click__img"
+                    />
+                  </label>
+                  <img
+                    src="./assets/foto/product5.svg"
+                    alt="product"
+                    class="card__image"
+                  />
+                </div>
+                <div class="card__group d-flex-c">
+                  <a href="#">
+                    <h3 class="card__title">Nike Air Max 270 React</h3>
+                  </a>
+                  <img
+                    src="./assets/icons/rate-product.svg"
+                    alt=""
+                    class="stars"
+                  />
+                  <p class="card__text d-flex-c">
+                    <span class="card__blue__text">$299,43</span>
+                    <span class="card__grey__text">$534,33</span>
+                    <span class="card__red__text">24% Off</span>
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card__box">
+                  <input
+                    type="checkbox"
+                    id="clickCheckbox6"
+                    class="click-checkbox"
+                  />
+                  <label for="clickCheckbox6" class="click">
+                    <img
+                      src="./assets/icons/actions.svg"
+                      alt="actions"
+                      class="click__img"
+                    />
+                  </label>
+                  <img
+                    src="./assets/foto/product6.svg"
+                    alt="product"
+                    class="card__image"
+                  />
+                </div>
+                <div class="card__group d-flex-c">
+                  <a href="#">
+                    <h3 class="card__title">Nike Air Max 270 React</h3>
+                  </a>
+                  <img
+                    src="./assets/icons/rate-product.svg"
+                    alt=""
+                    class="stars"
+                  />
+                  <p class="card__text d-flex-c">
+                    <span class="card__blue__text">$299,43</span>
+                    <span class="card__grey__text">$534,33</span>
+                    <span class="card__red__text">24% Off</span>
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card__box">
+                  <input
+                    type="checkbox"
+                    id="clickCheckbox7"
+                    class="click-checkbox"
+                  />
+                  <label for="clickCheckbox7" class="click">
+                    <img
+                      src="./assets/icons/actions.svg"
+                      alt="actions"
+                      class="click__img"
+                    />
+                  </label>
+                  <img
+                    src="./assets/foto/product7.svg"
+                    alt="product"
+                    class="card__image"
+                  />
+                </div>
+                <div class="card__group d-flex-c">
+                  <a href="#">
+                    <h3 class="card__title">Nike Air Max 270 React</h3>
+                  </a>
+                  <img
+                    src="./assets/icons/rate-product.svg"
+                    alt=""
+                    class="stars"
+                  />
+                  <p class="card__text d-flex-c">
+                    <span class="card__blue__text">$299,43</span>
+                    <span class="card__grey__text">$534,33</span>
+                    <span class="card__red__text">24% Off</span>
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card__box">
+                  <input
+                    type="checkbox"
+                    id="clickCheckbox8"
+                    class="click-checkbox"
+                  />
+                  <label for="clickCheckbox8" class="click">
+                    <img
+                      src="./assets/icons/actions.svg"
+                      alt="actions"
+                      class="click__img"
+                    />
+                  </label>
+                  <img
+                    src="./assets/foto/product8.svg"
+                    alt="product"
+                    class="card__image"
+                  />
+                </div>
+                <div class="card__group d-flex-c">
+                  <a href="#">
+                    <h3 class="card__title">Nike Air Max 270 React</h3>
+                  </a>
+                  <img
+                    src="./assets/icons/rate-product.svg"
+                    alt=""
+                    class="stars"
+                  />
+                  <p class="card__text d-flex-c">
+                    <span class="card__blue__text">$299,43</span>
+                    <span class="card__grey__text">$534,33</span>
+                    <span class="card__red__text">24% Off</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <h3 class="sellers__btm__undertitle">
+              <a href="#" class="sellers__btm__link">Load More</a>
+            </h3>
+          </section>
+          <section class="why_us d-flex-c">
+            <div class="us_content">
+              <img
+                src="./assets/icons/gruzovik.svg"
+                alt="car icon"
+                class="us__image"
+              />
+              <h3 class="us__title">FREE SHIPPING</h3>
+            </div>
+            <div class="us_content">
+              <img
+                src="./assets/icons/refund.svg"
+                alt="refund icon"
+                class="us__image"
+              />
+              <h3 class="us__title">100% REFUND</h3>
+            </div>
+            <div class="us_content">
+              <img
+                src="./assets/icons/call-center.svg"
+                alt="call-center icon"
+                class="us__image"
+              />
+              <h3 class="us__title">SUPPORT 24/7</h3>
+            </div>
+          </section>
+          <form action="https://htmlacademy.ru/" class="search" target="_blank">
+            <p class="search__content">
+              <input
+                type="search"
+                placeholder="Search query..."
+                class="search__input"
+              />
+              <input type="submit" value="Search" class="search__btn" />
+            </p>
+          </form>
         </div>
       </main>
     </div>
-</body>
+  </body>
 </html>
