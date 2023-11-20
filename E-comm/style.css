@@ -15,9 +15,7 @@ body {
   line-height: 1.5;
   overflow-x: hidden;
 }
-.container {
-  margin: 0 auto;
-}
+
 a {
   text-decoration: none;
 }
@@ -63,6 +61,11 @@ button {
   align-items: center;
 }
 
+.d-flex-sl {
+  display: flex;
+  justify-content: left;
+  align-items: start;
+}
 .d-flex-l {
   display: flex;
   align-items: center;
@@ -76,114 +79,127 @@ button {
 /* -------------------------------- head ----------------------------------- */
 
 .menu {
-    display: flex;
-    column-gap: 700px;
-    margin-top: 30px;
-  }
-  .menu__left {
-    margin-left: 110px;
-  }
-  .eng__usd {
-    color: #262626;
-    font-family: Proxima Nova;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin: 8px;
-  }
-  .menu__right {
-    justify-content: space-between;
-    column-gap: 25px;
-    display: flex;
-    margin-right: 60px;
-  }
-  .user__info {
-    color: #262626;
-    font-family: Proxima Nova;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-  }
-  .search {
-    color: #262626;
-    font-family: Proxima Nova;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    opacity: 0.5;
-  }
-  .header__heading {
-    display: flex;
-    margin-left: 120px;
-    margin-right: 50px;
-    margin-top: 50px;
-    column-gap: 280px;
-  }
-  .header__left {
-    display: flex;
-    margin-left: px;
-  }
-  .E_comm {
-    color: #22262a;
-    font-family: Poppins;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: normal;
-    margin-top: 3px;
-    margin-left: 5px;
-    text-align: center;
-  }
-  .header__right {
-    display: flex;
-    column-gap: 70px;
-  }
-  .home {
-    color: #109de4;
-    font-family: Poppins;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-  }
-  .bags {
-    color: #262626;
-    font-family: Poppins;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-  }
-  .image {
-    z-index: 0;
-    position: fixed;
-    margin-top: 40px;
-    width: 1440px;
-    height: 600px;
-    flex-shrink: 0;
-    text-align: center;
-    position: absolute;
-  }
-  h1 {
-    width: 573.169px;
-    height: 228.49px;
-    flex-shrink: 0;
-    color: var(--background-white, #fff);
-    font-family: Poppins;
-    font-size: 64px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 150%; /* 96px */
-    letter-spacing: 0.5px;
-    z-index: 2;
-    text-align: start;
-    margin-top: 280px;
-    margin-left: 130px;
-    position: absolute;
-  }
+  display: flex;
+  column-gap: 700px;
+  margin-top: 30px;
+}
+
+.menu__left {
+  margin-left: 110px;
+}
+
+.eng__usd {
+  color: #262626;
+  font-family: Proxima Nova;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 8px;
+}
+
+.menu__right {
+  justify-content: space-between;
+  column-gap: 25px;
+  display: flex;
+  margin-right: 60px;
+}
+
+.user__info {
+  color: #262626;
+  font-family: Proxima Nova;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.search {
+  color: #262626;
+  font-family: Proxima Nova;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  opacity: 0.5;
+}
+
+.header__heading {
+  display: flex;
+  margin-left: 120px;
+  margin-right: 50px;
+  margin-top: 50px;
+  column-gap: 280px;
+}
+
+.header__left {
+  display: flex;
+  margin-left: px;
+}
+
+.E_comm {
+  color: #22262a;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin-top: 3px;
+  margin-left: 5px;
+  text-align: center;
+}
+
+.header__right {
+  display: flex;
+  column-gap: 70px;
+}
+
+.home {
+  color: #109de4;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.bags {
+  color: #262626;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.image {
+  z-index: 0;
+  position: fixed;
+  margin-top: 40px;
+  width: 1440px;
+  height: 600px;
+  flex-shrink: 0;
+  text-align: center;
+  position: absolute;
+}
+
+h1 {
+  width: 573.169px;
+  height: 228.49px;
+  flex-shrink: 0;
+  color: var(--background-white, #fff);
+  font-family: Poppins;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 96px */
+  letter-spacing: 0.5px;
+  z-index: 2;
+  text-align: start;
+  margin-top: 280px;
+  margin-left: 130px;
+  position: absolute;
+}
 /* -------------------------------- /head ----------------------------------- */
 
 /* -------------------------------- main ----------------------------------- */
