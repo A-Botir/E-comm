@@ -79,69 +79,63 @@ button {
 /* -------------------------------- head ----------------------------------- */
 
 .menu {
-  display: flex;
   column-gap: 700px;
   margin-top: 30px;
-}
-
-.menu__left {
-  margin-left: 110px;
+  margin-left: 103px;
 }
 
 .eng__usd {
   color: #262626;
   font-family: Proxima Nova;
   font-size: 20px;
-  font-style: normal;
   font-weight: 400;
   line-height: normal;
   margin: 8px;
 }
 
 .menu__right {
-  justify-content: space-between;
-  column-gap: 25px;
-  display: flex;
-  margin-right: 60px;
+  column-gap: 6px;
 }
 
-.user__info {
+.items__info {
   color: #262626;
   font-family: Proxima Nova;
   font-size: 20px;
-  font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 
-.search {
+.items__info {
   color: #262626;
   font-family: Proxima Nova;
   font-size: 20px;
-  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-right: 27px;
+}
+
+.menu__right__search {
+  color: #262626;
+  font-family: Proxima Nova;
+  font-size: 20px;
   font-weight: 400;
   line-height: normal;
   opacity: 0.5;
 }
 
-.header__heading {
+.header_center {
   display: flex;
-  margin-left: 120px;
-  margin-right: 50px;
-  margin-top: 50px;
+  margin: 50px 50px 30px 120px;
   column-gap: 280px;
 }
 
 .header__left {
   display: flex;
-  margin-left: px;
 }
 
 .E_comm {
   color: #22262a;
-  font-family: Poppins;
   font-size: 20px;
-  font-style: normal;
   font-weight: 800;
   line-height: normal;
   margin-top: 3px;
@@ -158,7 +152,6 @@ button {
   color: #109de4;
   font-family: Poppins;
   font-size: 24px;
-  font-style: normal;
   font-weight: 500;
   line-height: normal;
 }
@@ -167,38 +160,29 @@ button {
   color: #262626;
   font-family: Poppins;
   font-size: 24px;
-  font-style: normal;
   font-weight: 500;
   line-height: normal;
 }
 
 .image {
-  z-index: 0;
-  position: fixed;
+  background-image: url("./assets/foto/background-image.png");
+  background-repeat: no-repeat;
+  background-size: contain;
   margin-top: 40px;
-  width: 1440px;
-  height: 600px;
+  width: 100%;
+  max-height: 600px;
   flex-shrink: 0;
   text-align: center;
-  position: absolute;
 }
 
 h1 {
-  width: 573.169px;
-  height: 228.49px;
-  flex-shrink: 0;
+  width: 573px;
   color: var(--background-white, #fff);
-  font-family: Poppins;
   font-size: 64px;
-  font-style: normal;
   font-weight: 700;
-  line-height: 150%; /* 96px */
+  line-height: 150%;
   letter-spacing: 0.5px;
-  z-index: 2;
-  text-align: start;
-  margin-top: 280px;
-  margin-left: 130px;
-  position: absolute;
+  margin-left: 104px;
 }
 /* -------------------------------- /head ----------------------------------- */
 
@@ -207,6 +191,84 @@ h1 {
 .main_wrap {
   width: 100%;
   margin-top: 330px;
+}
+
+/* ----------------------------- product_group ------------------------------ */
+
+.product__card {
+  border-radius: 5px;
+  z-index: 2;
+}
+
+.product__card--1 {
+  background-image: url("./assets/foto/best-seller1.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  max-width: 418px;
+  height: 358px;
+}
+
+.product__card--2 {
+  background-image: url("./assets/foto/best-seller2.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  max-width: 434px;
+  height: 354px;
+}
+
+.product__card--3 {
+  background-image: url("./assets/foto/best-seller3.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  max-width: 408px;
+  height: 357px;
+}
+
+.product_text--1 {
+  gap: 23px;
+  width: 202px;
+  color: var(--neutral-dark, #223263);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+}
+
+.product_text {
+  gap: 50px;
+  color: var(--neutral-dark, #223263);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+  width: 175px;
+}
+
+.product_price {
+  color: var(--primary-blue, #40bfff);
+  font-family: Raleway;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 180%; /* 54px */
+  letter-spacing: 0.5px;
+}
+
+.product__oldprice {
+  color: var(--neutral-grey, #9098b1);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%; /* 27px */
+  letter-spacing: 0.5px;
+  text-decoration: line-through;
+  margin-right: 8px;
+}
+
+.product__discount {
+  color: var(--primary-red, #fb7181);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 150%; /* 27px */
+  letter-spacing: 0.5px;
 }
 
 /* ----------------------------- best_sellers ----------------------------- */
@@ -456,4 +518,112 @@ h1 {
 /* -------------------------------- /main ----------------------------------- */
 
 /* -------------------------------- /html ---------------------------------- */
-/* ---------------------------------- html ----------------------------------- */
+
+/* ---------------------------------- footer ----------------------------------- */
+
+.footer_wrap {
+  background: #bcddfe;
+  width: 100%;
+}
+
+.footer_container {
+  padding-bottom: 54px;
+  padding-top: 150px;
+}
+.footer_content {
+  margin-bottom: 280px;
+  margin-left: 134px;
+}
+
+.footer_left {
+  margin-right: 308px;
+}
+
+.footer_left__logo {
+  gap: 7px;
+  margin-bottom: 16px;
+}
+
+.footer_left__img {
+  width: 39px;
+  height: 39px;
+}
+
+.footer_left__logoname {
+  color: #22262a;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.footer_left__subtitle {
+  width: 221px;
+  color: #22262a;
+  font-size: 12px;
+  font-family: Proxima Nova;
+  font-weight: 400;
+}
+
+.footer__title {
+  margin-bottom: 19px;
+  color: #22262a;
+  font-size: 18px;
+  font-family: Poppins;
+  font-weight: 500;
+}
+
+.footer_center__subtitle {
+  margin-bottom: 23px;
+  width: 198px;
+  color: #22262a;
+  font-size: 12px;
+  font-family: Proxima Nova;
+  font-weight: 400;
+}
+
+.footer__facebook {
+  margin-right: 39px;
+}
+
+.footer_right {
+  margin-left: 189px;
+}
+
+.footer_right__subtitle {
+  width: 148px;
+  color: #22262a;
+  font-size: 14px;
+  font-family: Poppins;
+  font-weight: 400;
+}
+
+.footer_right__item {
+  color: #22262a;
+  font-size: 14px;
+  font-family: Poppins;
+}
+.footer_line {
+  margin-bottom: 30px;
+  max-width: 1180px;
+  height: 2px;
+  border-color: #f6f7f8;
+  margin-left: 165px;
+}
+
+.footer_bottom {
+  gap: 647px;
+  margin-left: 149px;
+}
+
+.footer_bottom__text {
+  color: #c1c8ce;
+  font-size: 14px;
+  font-family: Proxima Nova;
+  font-weight: 400;
+}
+
+.footer_bottom__img {
+  cursor: pointer;
+}
+
+/* ---------------------------------- /footer ----------------------------------- */
+/* ---------------------------------- /html ----------------------------------- */
