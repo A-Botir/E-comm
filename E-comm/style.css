@@ -60,7 +60,11 @@ button {
   justify-content: center;
   align-items: center;
 }
-
+.d-flex-sl {
+  display: flex;
+  justify-content: left;
+  align-items: start;
+}
 .d-flex-l {
   display: flex;
   align-items: center;
@@ -70,9 +74,113 @@ button {
 /* ------------------------ Normalize style---------------------------------- */
 
 /* ---------------------------------- html ----------------------------------- */
+/* ---------------------------------- footer ----------------------------------- */
+
 .footer_wrap {
   background: #bcddfe;
+  width: 100%;
+}
+
+.footer_container{
+  padding-bottom: 54px;
+  padding-top: 150px;
 }
 .footer_content {
   margin-bottom: 280px;
+  margin-left: 134px;
 }
+
+.footer_left {
+  margin-right: 308px;
+}
+
+.footer_left__logo {
+  gap: 7px;
+  margin-bottom: 16px;
+}
+
+.footer_left__img {
+  width: 39px;
+  height: 39px;
+}
+
+.footer_left__logoname {
+  color: #22262a;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.footer_left__subtitle {
+  width: 221px;
+  color: #22262a;
+  font-size: 12px;
+  font-family: Proxima Nova;
+  font-weight: 400;
+}
+
+.footer__title {
+  margin-bottom: 19px;
+  color: #22262a;
+  font-size: 18px;
+  font-family: Poppins;
+  font-weight: 500;
+}
+
+.footer_center__subtitle {
+  margin-bottom: 23px;
+  width: 198px;
+  color: #22262a;
+  font-size: 12px;
+  font-family: Proxima Nova;
+  font-weight: 400;
+}
+
+.footer__facebook {
+  margin-right: 39px;
+}
+
+.footer_right {
+  margin-left: 189px;
+}
+
+.footer_right__subtitle {
+  width: 148px;
+  color: #22262a;
+  font-size: 14px;
+  font-family: Poppins;
+  font-weight: 400;
+}
+
+.footer_right__item {
+  color: #22262a;
+  font-size: 14px;
+  font-family: Poppins;
+}
+.footer_line {
+  margin-bottom: 30px;
+  max-width: 1180px;
+  height: 2px;
+  border-color:#F6F7F8;
+  margin-left: 165px;
+}
+
+.footer_bottom {
+  gap: 647px;
+  margin-left: 149px;
+}
+
+.footer_bottom__text {
+  color: #c1c8ce;
+  font-size: 14px;
+  font-family: Proxima Nova;
+  font-weight: 400;
+}
+
+.footer_bottom__img{
+  cursor: pointer;
+
+}
+/* ---------------------------------- html ----------------------------------- */
+
+/* ---------------------------------- /footer ----------------------------------- */
+/* ---------------------------------- /html ----------------------------------- */
